@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="logout">logout</a>
+    <hr>
+    <h3>Create post</h3>
+    <form action="/createpost" method="post">
+       <textarea name="posts"></textarea>
+       <input type="submit" value="create">
+    </form>
+    <hr>
+
+    <h3>Show posts</h3>
+    <% val.posts.forEach(function(element){ %>
+        <h1><%= element %></h1>
+     <% }) %>
+</body>
+</html>
